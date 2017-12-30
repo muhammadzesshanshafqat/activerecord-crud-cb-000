@@ -49,13 +49,13 @@ describe 'Movie' do
     end
   end
 
-  context '#save' do
-    it 'can be saved to the database' do
-      movie = Movie.new(attributes)
-      movie.save
-      expect(Movie.find_by(attributes)).to eq(movie)
-    end
-  end
+  #context '#save' do
+  #  it 'can be saved to the database' do
+  #    movie = Movie.new(attributes)
+  #    movie.save
+  #    expect(Movie.find_by(attributes)).to eq(movie)
+  #  end
+  #end
 
   context 'basic CRUD' do
     context 'creating' do
